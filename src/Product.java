@@ -2,38 +2,60 @@
 public class Product {
 
 	//All Product variables
-	private boolean isPorous=false;
-	private String type = "";
+	private int product_id = 0;
+	private boolean porous_ready=false;
+	private String product_name = "";
+	private float price = 0.0F;
 	
 	//Product constructor methods, 
 	//All require a product type, 
 	//Porous ware is optional
-	Product(String type){
-		this.type = type;
+	Product(int id, String name, float price){
+		this.product_id = id;
+		this.product_name = name;
+		this.price = price;
 	}
 	
-	Product(String type, boolean isPW){
-		this.type = type;
-		this.isPorous=isPW;
+	Product(int id, String name, float price, boolean PWready){
+		this.product_id = id;
+		this.product_name = name;
+		this.price = price;
+		this.porous_ready=PWready;
 	} 
 	
 	
 	//Get and Set Methods:
 	//for type
-	String getType(){
-		return type;
+	String getName(){
+		return product_name;
 	}
 	
-	void setType(String t){
-		this.type = t;
+	void setName(String t){
+		this.product_name = t;
 	}
 	
 	//for Porous ware
-	boolean getIsPorous(){
-		return isPorous;
+	boolean getIsPorousReady(){
+		return porous_ready;
 	}
 	
-	void setIsPorous(boolean isPW){
-		this.isPorous=isPW;
+	void setIsPorousReady(boolean PWready){
+		this.porous_ready=PWready;
+	}
+	
+	int getId(){
+		return this.product_id;
+	}
+	
+	void setId(int num){
+		this.product_id = num;
+	}
+	
+	float getPrice(){
+		return this.price;
+	}
+	
+	void setPrice(float num){
+		this.price = num;
 	}
 }
