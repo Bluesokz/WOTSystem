@@ -8,7 +8,7 @@ import javax.swing.SpringLayout;
 public class orderForm extends JFrame {
 	private static final long serialVersionUID = 597963664276031085L;
 	
-	String[] labels = {"Name: ", "Fax: ", "Email: ", "Address: "};
+	String[] labels = {"Name: ", "Address: ", "Product: ", "Quantity: "};
 	int numPairs = labels.length;
 	SpringLayout sl = new SpringLayout();
 	JPanel panel = new JPanel(sl);
