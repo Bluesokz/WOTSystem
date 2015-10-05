@@ -235,7 +235,7 @@ public class Application {
 	void initiate(){
 		try{
 			
-			String host = "jdbc:mysql://10.50.15.18:3306/wots";
+			String host = "jdbc:mysql://10.50.15.26:3306/wots";
 			String username = "root"; 
 			String password = "password";
 			conn = DriverManager.getConnection(host,username,password);
